@@ -1,0 +1,178 @@
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+/* basic css reset */
+
+:root {
+    --bg-color: #E0E0E0;
+    --white-color: #F5F5F5;
+    --dark-blue: #15748E;
+    --med-blue: #3D8CA4;
+    --light-blue: #85B3C1;
+    --dark-red: #A7321F;
+    --med-red: #B83722;
+    --light-red: #CA3C25;
+    --dark-gray: #B8B8B8;
+    --light-gray: #CCCCCC;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    /* align-items: center;
+    align: center;
+    text-align: center; */
+}
+.player {
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+}
+.board {
+    display: none;
+}
+.dice {
+    display: none;
+}
+.scorecard {
+    display: none;
+}
+.winner {
+    display: none;
+    text-align: center;
+}
+.box {
+    border: 4px solid var(--dark-blue);
+    background-color: var(--med-blue);
+    color: var(--light-blue);
+}
+.shut {
+    border: 4px solid var(--dark-red);
+    background-color: var(--med-red);
+    color: var(--light-red);
+}
+.container {
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+}
+.main-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: "b1 b2 b3 b4 b5 b6 b7 b8 b9";
+    text-align: center;
+}
+#box1 {
+    grid-area: b1;
+    width: 140px;
+    border-radius: 25px;
+}
+#box2 {
+    grid-area: b2;
+    width: 140px;
+    border-radius: 25px;
+}
+#box3 {
+    grid-area: b3;
+    width: 140px;
+    border-radius: 25px;
+}
+#box4 {
+    grid-area: b4;
+    width: 140px;
+    border-radius: 25px;
+}
+#box5 {
+    grid-area: b5;
+    width: 140px;
+    border-radius: 25px;
+}
+#box6 {
+    grid-area: b6;
+    width: 140px;
+    border-radius: 25px;
+}
+#box7 {
+    grid-area: b7;
+    width: 140px;
+    border-radius: 25px;
+}
+#box8 {
+    grid-area: b8;
+    width: 140px;
+    border-radius: 25px;
+}
+#box9 {
+    grid-area: b9;
+    width: 140px;
+    border-radius: 25px;
+}
+button {
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+    font-size: 20px;
+    border: 3px solid var(--med-blue);
+    border-radius: 25px;
+}
+button:hover {
+    background-color: var(--dark-red);
+    border: 3px solid var(--med-red);
+}
+button:disabled {
+    background-color: var(--dark-gray);
+    border: 3px solid var(--light-gray);
+}
+.dice {
+    text-align: center;
+}
+h1 {
+    color: var(--white-color);
+    font-size: 90px;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+i {
+    font-size: 120px;
+    color: var(--white-color);
+}
+p {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+table {
+    color: black;
+    border: 3px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    border: 3px solid blue;
+}
+td {
+    border: 3px solid blue;
+}
+.scorecard {
+    text-align: center;
+}
+#round {
+    display: inline-block;
+    float: left;
+}
+#currentPlayer {
+    display: inline-block;
+    float: right;
+}
+#againBtn {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align: center;
+    text-align: center;
+}
